@@ -10,6 +10,18 @@ export const Container = styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
+	
+	.header.background-day-gray {
+	background-color: #ebebeb;
+	color: #111111;
+	}
+
+.header.background-day-gray > a {
+	color: #111111;
+	font-size: 1em;
+	font-weight: 700;
+	
+}
 
     #menu {
 	display: flex;
@@ -26,14 +38,14 @@ export const Container = styled.div`
 }
 
 .nav-li {
-	color: white;
+	color: var(--shape);
 	text-decoration: none;
 	font-size: 1em;
 	font-weight: semibold;
 	transition: 0.9s;
     
     &:hover {
-        border-bottom: solid 1px var(--blue-padrao);
+        border-bottom: solid 0.5px var(--blue-padrao);
     }
 
     .text-day {
@@ -93,6 +105,7 @@ input:checked + .slider:before {
 	-ms-transform: translateX(26px);
 	transform: translateX(26px);
 	background: yellow;
+	
 	/* sol aqui */
 
 }

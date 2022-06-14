@@ -15,24 +15,21 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         gap: 2px;
-    }
-        .texto-inicial > p {
+        p {
             font-weight: lighter;
             font-size: 2rem;
+            
         }
-            .texto-inicial > h1 {
+            
+        h1 {
                 font-weight: 700;
                 font-size: 3rem;
-            }
             
-            .texto-inicial > h2 {
+            }
+            h2 {
                 font-size: 2rem;
                 font-weight: lighter;
-        }
-        h2 {
-	    font-size: 1.5em;
-    }
-
+            }
 
     .whatsapp {
 	padding: 0.5em 0.8em;
@@ -49,24 +46,15 @@ export const Container = styled.div`
 	align-items: center;
 	font-size: 20px;
 	transition: 0.2s;
-    img {
-            width: 25px;
-        }
-
-    &:hover {
-        /* background-color: #006400; */
-        filter: brightness(0.8);
-        
-        
-        }
-    }
-
-    .imagem-inicial {
-	width: 60%;
     
-    .imagem-inicial > img {
-        width: 100%;
+        &:hover {
+            filter: brightness(0.8);
+                }
+            }
         }
+    .imagem-inicial {
+	width: 50%;
+    
     }
 }
 `;

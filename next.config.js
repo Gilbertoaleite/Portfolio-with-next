@@ -5,6 +5,10 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    domains: ['github.com/gilbertoaleite.png']
+  },
+
   webpack:{
     webpack(config) {
       config.module.rules.push({
