@@ -9,15 +9,15 @@ export const Container = styled.div`
 	max-width: 1400px;
 	padding: 6em;
 	justify-content: space-between;
+	
 }
-
-.titulo-habilidades > h2 {
-	display: flex;
-	align-items: flex-start;
-	justify-content: center;
+#titulo-habilidades {
+	align-items: center;
 	text-align: center;
 	font-size: 1.5em;
-	margin: 0;
+	h2{
+		padding-top: 25px ;
+	}
 }
 
 .icones-habilidades {
@@ -31,36 +31,36 @@ export const Container = styled.div`
 }
 
 .moldura-icone {
-	background-color: #000000;
+	background-color: var(--background);
 	height: 90px;
 	width: 90px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-bottom: solid 10px #eeeeee;
+	border-bottom: solid 10px var(--text-night);
 	box-sizing: border-box;
 	transition: 0.2s;
 	flex-direction: column;
 	position: relative;
 	cursor: pointer;
 	/* color: transparent; */
-	color: #eeeeee;
+	color: var(--text-night);
 }
 
 .moldura-icone.background-day {
-	background-color: #333333;
-	color: #333333;
-	border-bottom: solid 10px #5dad;
+	background-color: var(--text-day);
+	color: var(--text-day);
+	border-bottom: solid 10px var(--green);
 }
 
 .moldura-icone.show-hab {
-	border-bottom: solid 50px #5882fa;
+	border-bottom: solid 50px var(--blue-padrao);
 	padding: 2em;
 	transition: 0.3s;
 }
 
 .moldura-icone.show-hab:hover {
-	border-bottom: solid 50px #5882fa;
+	border-bottom: solid 50px var(--blue-padrao);
 	filter: brightness(0.8);
 }
 .moldura-icone > p {
@@ -72,7 +72,7 @@ export const Container = styled.div`
 }
 
 .moldura-icone:hover {
-	border-bottom: solid 10px #5882fa;
+	border-bottom: solid 10px var(--blue-padrao);
 }
 
 .html.show-hab,
@@ -81,7 +81,7 @@ export const Container = styled.div`
 .react.show-hab,
 .next.show-hab,
 .css.show-hab {
-	color: white;
+	color: var(--shape);
 }
 
 `;

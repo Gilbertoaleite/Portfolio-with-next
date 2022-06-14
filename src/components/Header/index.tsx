@@ -7,7 +7,7 @@ export function Header() {
     return (
         <>
             <Container>
-                <header>
+                <header className="header">
                 <nav id="nav-menu">
                     {/*  menu mobile  */ }
                     <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="#menu" aria-expanded="false"> Menu

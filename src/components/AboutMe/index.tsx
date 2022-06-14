@@ -20,18 +20,17 @@ export function AboutMe() {
 					<div className="texto-sobre">
 						<h2>Sobre mim</h2>
 						<p>
-							Olá! sou desenvolvedor Front-end e tenho conhecimentos nas ferramentas React, Nextjs, Bootstrap, 
+							Olá bem vindo ao meu Portfólio, sou desenvolvedor Front-end e tenho conhecimentos nas ferramentas React, Nextjs, Bootstrap, 
 							Sass, Styled components e entre outros, sou apaixonado por tecnologia e
-							inovação! sou do estado de São Paulo, e frequentemente participo
-							dos bootcamp da Digital Innovation one e de outras escolas como:
-						</p>
-
-							<p> 
-								Rocketseat, Alura Oracle One e TreinaWeb. Possuo experiências em projetos em
+							inovação! sou do estado de São Paulo, e frequentemente estou participando
+							dos bootcamp da Digital Innovation one, e estou cursando nas escolas:
+						</p><p> 
+								Rocketseat, Alura Oracle One e TreinaWeb, Coursera, Possuo experiências em projetos
 								front-end Nextjs e React</p>
-						<p> no momento estou estudando online os cursos de formação em desenvolvimento e
-							me aperfeiçoando cada vez mais em Next e React. 
-						</p>
+						<p> e estou me aperfeiçoando cada vez mais em Next e React, e em Backend em java com Spring Boot. 
+							</p>
+							<p><strong>Estou disponível para projetos, CLT, PJ e freelances</strong>, fique a vontade para entrar em contato comigo pelo Whatsapp, 
+								terei um prazer em contribuir com os meus trabalhos 🚀</p>
 						
 						<div className="botoes-sobre">
 							<a
@@ -42,13 +41,20 @@ export function AboutMe() {
 							><Image
 									src={ linkedinBrands }
 									title="Meu LinkedIn"
+									alt="logo do linkedin"
+									width={'25px'} height={'45px'}
 								/>Linkedin</a
 							>
 							<a
 								className="botao"
 								href="../../assets/resume/CurriculoGilberto.pdf" download
 							>
-								<Image src={ vectorImg } alt="Icone-de-anexo" />Currículo
+								<Image 
+								src={ vectorImg } 
+								title="Meu currículo em pdf"
+								alt="Icone-de-anexo" 
+								width={'25px'} height={'45px'}
+								/>Currículo
 							</a>
 						</div>
 					</div>

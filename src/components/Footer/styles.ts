@@ -1,22 +1,21 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	footer {
-	display: flex;
-	align-items: center;
-	margin: 1em auto;
-	background: var(--background-containers);
-	gap: 2em;
-	justify-content: center;
-	list-style: none;
-	align-items: center;
+	.Footer {
+	position: flex;
+    padding: 2rem 0 2rem 0;
+    bottom: 0;
+    width: 100%;
+	background-color: var(--blue-padrao) ;
+
+}
+
+.container-social{
+	margin: 0 auto;
 	text-align: center;
-	color: #fffeee;
 	.social {
 		display: inline-block;
-		align-items: center;
-		margin: 1em auto;
-		width: 5%;
+		margin: 0 auto;
 		padding: 0.5em 0.5em 0 0.5em;
 		
 		&:hover {
@@ -24,8 +23,7 @@ export const Container = styled.div`
 		}
 	}
 }
-span,
-a {
+span, a {
 	color: #5882fa;
 	text-decoration: none;
 }

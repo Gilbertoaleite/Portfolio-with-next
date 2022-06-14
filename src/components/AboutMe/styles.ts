@@ -33,7 +33,11 @@ export const Container = styled.div`
 	margin-right: 1em;
 	line-height: 1.5;
 	/* font-size: 1.2em; */
+	strong{
+		color: var(--red);
+	}
 }
+
 .botoes-sobre {
 	width: 60%;
 	display: flex;

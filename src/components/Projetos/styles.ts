@@ -12,9 +12,6 @@ export const Container = styled.div`
 	flex-wrap: wrap;
 	gap: 2em;
 
-
-
-
 .item-projeto {
 	width: 30%;
 	padding: 1em 1em;
@@ -27,6 +24,18 @@ export const Container = styled.div`
 	gap: 2em;
 	border: solid 2px transparent;
 	transition: 0.8s;
+
+	
+	.botao {
+	display:flex;
+	width: 100%;
+	
+	}
+
+.item-projeto:hover {
+	border: 2px solid #5882fa;
+	filter: brightness(0.8);
+}
 
 	
 .item-projeto > h3 {

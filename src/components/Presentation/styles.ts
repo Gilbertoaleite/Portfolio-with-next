@@ -15,24 +15,26 @@ export const Container = styled.div`
         display: flex;
         flex-direction: column;
         gap: 2px;
-        p {
-            font-weight: lighter;
-            font-size: 2rem;
-            
-        }
-            
-        h1 {
-                font-weight: 700;
-                font-size: 3rem;
+        
+    }
+    .texto-inicial > p {
+        font-weight: lighter;
+        font-size: 2rem;
+    
+    }
+    .texto-inicial > h1 {
+            font-weight: 700;
+            font-size: 3rem;
             
             }
-            h2 {
-                font-size: 2rem;
+        .texto-inicial > h2 {
+                font-size: 9rem;
                 font-weight: lighter;
+                
             }
-
+    }
     .whatsapp {
-	padding: 0.5em 0.8em;
+	padding: 1em 0.8em;
 	margin-top: 1em;
 	text-align: center;
 	background-color: #04b431;
@@ -51,10 +53,14 @@ export const Container = styled.div`
             filter: brightness(0.8);
                 }
             }
-        }
+        
     .imagem-inicial {
 	width: 50%;
     
     }
-}
+    .imagem-inicial > img {
+	width: 100%;
+    
+    }
+
 `;

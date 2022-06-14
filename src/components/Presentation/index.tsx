@@ -15,22 +15,23 @@ export function Presentation() {
 							<p>Olá, meu nome é</p>
 							<h1 id="userName">Gilberto de Araujo Leite</h1>
 							<p id="userBio">
-								Desenvolvedor Front-end JR, React e Next.js.
+								Desenvolvedor Front-end Next.js | React.
 							</p>
 	
 							<a
+								className="whatsapp"
 								rel="noreferrer noopener"
 								href="https://api.whatsapp.com/send?phone=+55%2011%2096347-1286&text=Sua%20mensagem"
-								className="whatsapp"
 								><Image
-									className="whatsapp img"
+									className="whatsapp"
 									src={whatsImg}
 									alt="Icone whatsapp"
+									width={'25px'} height={'45px'}
 								/>Whatsapp</a
 							>
 						</div>
 						<div className="imagem-inicial">
-							<Image className="imagem-inicial img" src={devImg} alt="imagem de um boneco com notebook" />
+							<Image className="imagem-inicial " src={devImg} alt="imagem de um boneco com notebook" />
 						</div>
 					</div>
 				</section>

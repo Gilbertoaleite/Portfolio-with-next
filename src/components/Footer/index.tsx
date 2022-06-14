@@ -7,24 +7,24 @@ import Image from "next/image";
 export function Footer() {
 	return (
 		<Container>
-				
-			<footer>
+			<footer className="Footer">
+				<div className="container-social">
 				<p>&copy; Desenvolvido por Gilberto A Leite  2022 </p>
 				<div className="social">
 					<a
 						rel="noreferrer noopener"
 						target="_blank"
-						href="https://instagram.com/gilbertoaleite/"
-					><Image src={ instaImg } alt="Icone-Instagram"
-						/></a>
+						href="https://instagram.com/gilbertoaleite/">
+						<Image src={ instaImg } alt="Icone-Instagram" />
+					</a>
 				</div>
 				<div className="social">
 					<a
 						rel="noreferrer noopener"
 						target="_blank"
-						href="https://github.com/gilbertoaleite"
-					><Image src={ githubImg } alt="Icone-Github"
-						/></a>
+						href="https://github.com/gilbertoaleite">
+						<Image src={ githubImg } alt="Icone-Github" />
+					</a>
 				</div>
 				<div className="social">
 					<a
@@ -32,12 +32,11 @@ export function Footer() {
 						target="_blank"
 						href="https://linkedin.com/in/gilbertoaleite"
 					>
-					<Image src={ linkedinImg } alt="Icone-LinkedIn" />
-
+						<Image src={ linkedinImg } alt="Icone-LinkedIn" />
 					</a>
 				</div>
-				</footer>
-		
-			</Container>
+				</div>
+			</footer>
+		</Container>
 	)
 };

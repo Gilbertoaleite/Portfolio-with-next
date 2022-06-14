@@ -1,13 +1,9 @@
 import { Container } from "./styles";
-import vectorImg from "../../assets/img/Vector.svg";
-import linkedinBrands from "../../assets/img/linkedin-brands.svg";
-import Image from "next/image";
-
 
 export function Projetos() {
 	return (
 		<Container >
-	<section className="projetos" id="projetos">
+			<section className="projetos" id="projetos">
 				<h2 >Projetos</h2>
 				<div className="container-projetos">
 					<div className="item-projeto">

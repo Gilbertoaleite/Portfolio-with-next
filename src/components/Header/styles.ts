@@ -1,19 +1,18 @@
 import styled from 'styled-components';
-// import sunImg from '../../assets/img/sun-regular.svg'
-// import sol  from "../../assets/img/sun-regular.svg";
+
 
 export const Container = styled.div`
-	header{
-    height: 70px;
-	background: var(--black);
-	padding: 1rem;
+	.header{
+	height: 70px;
 	display: flex;
-	align-items: center;
+	padding: 1rem;
+	align-items: center ;
 	justify-content: flex-end;
+	background: var(--background-containers);
 	
-	.header.background-day-gray {
-	background-color: #ebebeb;
+.header.background-day-gray {
 	color: #111111;
+	background-color: #ebebeb;
 	}
 
 .header.background-day-gray > a {
@@ -24,73 +23,70 @@ export const Container = styled.div`
 }
 
     #menu {
-	display: flex;
 	gap: 1rem;
-	margin: 2em 2em 2em 0;
+	display: flex;
 	transition: 0.2s;
+	margin: 2em 2em 2em 0;
     a {
-	text-decoration: none;
 	display: block;
 	padding: 0.7rem;
+	text-decoration: none;
     }
-
-    
 }
 
 .nav-li {
-	color: var(--shape);
-	text-decoration: none;
 	font-size: 1em;
-	font-weight: semibold;
 	transition: 0.9s;
+	color: var(--shape);
+	margin-bottom: 1.5em;
+	font-weight: semibold;
     
     &:hover {
         border-bottom: solid 0.5px var(--blue-padrao);
     }
-
     .text-day {
         color: var(--text-day);
     }
 }
 
 .switch {
-	position: relative;
-	display: inline-block;
 	width: 60px;
 	height: 34px;
 	margin-right: 2em;
+	position: relative;
+	display: inline-block;
     
     input {
+    width: 0;
+    height: 0;
     opacity: 0;
-        width: 0;
-        height: 0;
     }
 }
 
 .slider {
-	position: absolute;
-	cursor: pointer;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: orange;
-	-webkit-transition: 0.4s;
+	cursor: pointer;
 	transition: 0.4s;
+	position: absolute;
+	-webkit-transition: 0.4s;
+	background-color: orange;
     
     &:before {
-        position: absolute;
-        content: '';
-        height: 26px;
-        width: 26px;
         left: 4px;
+		content: '';
         bottom: 4px;
-        background: rgb(255, 255, 255);
-        box-shadow: 0 0 20px yellow;
-        -webkit-transition: 0.4s;
+        width: 26px;
+        height: 26px;
         transition: 0.4s;
-        /* background-image: url('assets/moon-regular.svg'); */
+        position: absolute;
+        -webkit-transition: 0.4s;
+        box-shadow: 0 0 20px yellow;
 		background: var(--background);
+        background: rgb(255, 255, 255);
+        /* background-image: url('assets/moon-regular.svg'); */
     }
 }
 
@@ -101,10 +97,10 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-	-webkit-transform: translateX(26px);
-	-ms-transform: translateX(26px);
-	transform: translateX(26px);
 	background: yellow;
+	transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	-webkit-transform: translateX(26px);
 	
 	/* sol aqui */
 
