@@ -47,7 +47,10 @@ export function AboutMe() {
 							>
 							<a
 								className="botao"
-								href="../../assets/resume/CurriculoGilberto.pdf" download
+								title="Meu Currículo no ondrive"
+								rel="noreferrer noopener"
+								target="_blank"
+								href='https://drive.google.com/file/d/1fA5m3fYKgClCrKpKB-jRcj4WWbp30Pfd/view?usp=sharing' download
 							>
 								<Image 
 								src={ vectorImg } 
