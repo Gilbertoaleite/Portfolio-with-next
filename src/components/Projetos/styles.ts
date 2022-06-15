@@ -24,11 +24,12 @@ export const Container = styled.div`
 	gap: 2em;
 	border: solid 2px transparent;
 	transition: 0.8s;
-
+	
 	
 	.botao {
 	display:flex;
 	width: 100%;
+	
 	
 	}
 

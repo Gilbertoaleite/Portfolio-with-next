@@ -13,8 +13,7 @@ import { GlobalStyle } from '../styles/global'
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
-      <GlobalStyle />
+    <>      <GlobalStyle />
         <Component {...pageProps} />
         <Header/>
         <Presentation/>
@@ -25,6 +24,7 @@ export default function App({ Component, pageProps }) {
         <Certificados/>
         <Footer/>
         </>
+
     
   )
 }

@@ -1,3 +1,13 @@
+import Image from "next/image";
+import focaImg from '../../assets/img/projetos/foca-img.png';
+import iterImg from '../../assets/img/projetos/inter-img.png';
+import petImg from '../../assets/img/projetos/adote-pet-img.png';
+import barbeariaImg from '../../assets/img/projetos/barbearia-img.png';
+import netflixImg from '../../assets/img/projetos/netflix-img.png';
+import decoderImg from '../../assets/img/projetos/decoder-img.png';
+import alurinhaImg from '../../assets/img/projetos/alurinha-img.png';
+import treinacookImg from '../../assets/img/projetos/treinacook-img.png';
+import dashboardImg from '../../assets/img/projetos/dashboard-img.png';
 import { Container } from "./styles";
 
 export function Projetos() {
@@ -6,50 +16,77 @@ export function Projetos() {
 			<section className="projetos" id="projetos">
 				<h2 >Projetos</h2>
 				<div className="container-projetos">
+	{/* Projeto 1 */}
 					<div className="item-projeto">
-						<h3>Resgate</h3>
+						<h3>Jogo da Foca</h3>
+						<Image src={focaImg}  />
 						<p>
-							Joguinho feito durante o bootcamp JavaScript Game Developer da
-							Digital Innovation One
+							Joguinho feito durante a Challenger One da Oracle na Alura.
 						</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
-							href="https://jogo-helicoptero.vercel.app/"
+							href="https://gilbertoaleite.github.io/jogo-da-foca-desafio-alura/"
 						>Link do Projeto</a
 						>
-					</div>
+						<a
+							className="botao"
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://github.com/Gilbertoaleite/jogo-da-foca-desafio-alura"
+						>Link do Git</a
+						>
+						</div>
+	{/* Projeto 2 */}
+
 					<div className="item-projeto">
-						<h3>O Mentalista Game</h3>
+						<h3>Clone do internet banking do Inter</h3>
+						<Image src={iterImg} />
 						<p>
-							Pagina o mentalista foi desenvolvido na imersão dev Alura, sendo um jogo de escolher números aleatórios.
+						Foi desenvolvido o layout do banco Inter, durante o bootcamp Inter na DIO,
+						ultizando create react app.
 						</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
-							href="https://codepen.io/gilbertoaleite/full/XWgzdBE"
+							href="https://banco-inter-clone.vercel.app/dashboard"
 						>Link do Projeto</a
 						>
-					</div>
-					<div className="item-projeto">
-						<h3>Projeto e-diarista | TreinaWeb</h3>
+						<a
+							className="botao"
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://github.com/Gilbertoaleite/Banco-inter-clone"
+						>Link do Git</a
+						>
+						</div>
+	{/* Projeto 3 */}			
+				<div className="item-projeto">
+						<h3>Projeto Adote um Pet | TreinaWeb</h3>
+						<Image src={petImg } />
 						<p>
-							Projeto foi feito um site fictício, de procura de diaristas, e foi
-							feito usando o React e para api foi ultilizado o Python com o
-							Django.
+							O projeto foi feito o durante o MultiStack da TreinaWeb, desenvolvido com
+							Next.js, @mui/material, axios e @emotion/styled, e ultilizado o Java com Spring boot para api.
 						</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
-							href="https://e-diaristas-gilbertoaleite.vercel.app"
-						>Link do Projeto</a
-						>
-					</div>
+							href="https://pet-web-blush.vercel.app/"
+						>Link do Projeto</a>
+						<a
+							className="botao"
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://github.com/Gilbertoaleite/PetWeb"
+						>Link do Git</a>
+						</div>
+	{/* Projeto 4 */}
 					<div className="item-projeto">
 						<h3>Dashboard de Vendas</h3>
+						<Image src={dashboardImg} />
 						<p>
 							Desenvolvido o dashboard de vendas com Spring e React a parte
 							FrontEnd, feito na primeira aula da semana Spring React do
@@ -62,25 +99,44 @@ export function Projetos() {
 							href="https://gilberto-dsvendas.netlify.app"
 						>Link do Projeto</a
 						>
+
+						<a
+							className="botao"
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://github.com/Gilbertoaleite/projeto-sds3"
+						>Link do Git</a>
 					</div>
+{/* Projeto 5 */}
+
 					<div className="item-projeto">
-						<h3>Automatizando com Python</h3>
+						<h3>Alurinha</h3>
+						<Image src={alurinhaImg} />
 						<p>
-							Automatizando com Python, programei para abrir o chrome e acessar
-							a pagina da Dio.me Inc. e acessa o bootcamp da Impulso
+						Alurinha, aula de flexbox da Alura.
 						</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
-							href="https://www.linkedin.com/feed/update/urn:li:activity:6859915957129777154"
+							href="https://gilbertoaleite.github.io/alurinha-aula-flexbox/"
 						>Link do Projeto</a
 						>
+
+						<a
+							className="botao"
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://github.com/Gilbertoaleite/alurinha-aula-flexbox"
+						>Link do Git</a>
 					</div>
+
+{/* Projeto 6 */}
 					<div className="item-projeto">
-						<h3>NETFLIX-Live</h3>
+						<h3>NETFLIX Clone</h3>
+						<Image src={netflixImg} />
 						<p>
-							Foi desenvolvido em html e com o bootstrap o meu primeiro projeto
+							Foi desenvolvido em html e com o bootstrap foi o meu primeiro projeto
 							da Dio.
 						</p>
 						<a
@@ -90,9 +146,18 @@ export function Projetos() {
 							href="https://gilbertoaleite-netflix-clone.netlify.app/index.html"
 						>Link do Projeto</a
 						>
+
+						<a
+							className="botao"
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://github.com/Gilbertoaleite/InterfaceNetflix"
+						>Link do Git</a>
 					</div>
+{/* Projeto 7 */}
 					<div className="item-projeto">
 						<h3>TreinaCook - Receitas</h3>
+						<Image src={treinacookImg} />
 						<p>
 							Foi desenvolvido em Next.js e gerado para a pagina estática que
 							deixou o site muito mais rápido.
@@ -104,31 +169,52 @@ export function Projetos() {
 							href="https://gilbertoaleite-receitas-next-js.vercel.app/"
 						>Link do Projeto</a
 						>
+						<a
+							className="botao"
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://github.com/Gilbertoaleite/projeto-com-next-js-treinaweb"
+						>Link do Git</a>
 					</div>
+{/* Projeto 8 */}
 					<div className="item-projeto">
-						<h3>Site de Controle Financeiro Nikel</h3>
+						<h3>Barbearia Alura</h3>
+						<Image src={barbeariaImg}  />
 						<p>
-							Desenvolvi esse site de controle financeiro assistindo as aulas do
-							codaí(Growdev), dar pra criar conta, e logar no site e lançar
-							entrada e saida de dinheiro.
+						Barbearia Alura, site fictício de uma Barbearia desenvolvido na aula de front-end da Alura
 						</p>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
-							href="https://gilbertoaleite-codai.netlify.app/"
-						>Link do Projeto</a
-						>
-					</div>
-					<div className="item-projeto">
-						<h3>ig.news</h3>
-						<p>Projeto em Nextjs está em desenvolvimento na aula da Rocketseat React Ignite.</p>
+							href="https://barbearia-alura-fake.netlify.app/"
+						>Link do Projeto</a>
 						<a
 							className="botao"
 							rel="noreferrer noopener"
 							target="_blank"
-							href="https://ig-news-rocketseat.vercel.app/" >
+							href="https://github.com/Gilbertoaleite/Barbearia"
+							>Link do Git</a>
+						
+					</div>
+{/* Projeto 9 */}
+					<div className="item-projeto">
+						<h3>Decodificador de texto</h3>
+						<Image src={decoderImg} />
+						<p>Challenge Oracle ONE Lógica de Programação 2022 </p>
+						<a
+							className="botao"
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://gilbertoaleite-alura-challeg-decoder.netlify.app/" >
 							Link do Projeto</a>
+
+							<a
+							className="botao"
+							rel="noreferrer noopener"
+							target="_blank"
+							href="https://github.com/Gilbertoaleite/codificador-e-descodificador-alura"
+						>Link do Git</a>
 					</div>
 				</div>
 			</section>
