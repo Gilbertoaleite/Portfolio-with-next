@@ -5,14 +5,14 @@ export const GlobalStyle = createGlobalStyle`
 /* cores */
 :root{
     /* modo dark */
---background-containers: rgba(35, 35, 35, 0.4);
+--background-containers: rgba(35, 35, 35, 0.6);
 --background: #000111;
 --text-night:#fffeee;
 
-/* modo claro */
+
 
 --text-day:#333333;
---background-day:#fff;
+--background-day:#20B2AA;
 --background-containers-day: #ebebeb;
 --red: #E62E4D;
 

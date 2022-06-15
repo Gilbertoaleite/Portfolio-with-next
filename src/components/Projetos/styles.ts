@@ -24,6 +24,12 @@ export const Container = styled.div`
 	gap: 2em;
 	border: solid 2px transparent;
 	transition: 0.8s;
+
+	&:hover {
+	border: 2px solid #5882fa;
+	filter: brightness(0.8);
+}
+
 	
 	
 	.botao {
@@ -33,25 +39,24 @@ export const Container = styled.div`
 	
 	}
 
-.item-projeto:hover {
-	border: 2px solid #5882fa;
-	filter: brightness(0.8);
-}
 
 	
+
+}
+
+/* .item-projeto.background-day-gray {
+	background-color: #ebebeb;
+	color: #2c2c2c;
+	}
+} */
+
+
 .item-projeto > h3 {
 	text-align: center;
 	font-size: 1.1em;
 	font-weight: 700;
 	}
 }
-
-.item-projeto.background-day-gray {
-	background-color: #ebebeb;
-	color: #2c2c2c;
-	}
-}
-
 .projetos > h2 {
 margin-top: 3rem;
 font-size: 2em;

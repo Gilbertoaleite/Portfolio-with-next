@@ -1,5 +1,3 @@
-// import { ThemeProvider } from 'styled-components'
-
 import { AboutMe } from '../components/AboutMe'
 import { Certificados } from '../components/Certifcados'
 import { Experiencias } from '../components/Experiencias'
@@ -13,7 +11,8 @@ import { GlobalStyle } from '../styles/global'
 
 export default function App({ Component, pageProps }) {
   return (
-    <>      <GlobalStyle />
+    <>      
+        <GlobalStyle />
         <Component {...pageProps} />
         <Header/>
         <Presentation/>

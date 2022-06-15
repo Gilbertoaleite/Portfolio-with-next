@@ -1,3 +1,7 @@
+import React from "react";
+
+
+
 export default function Home() {
   return (
     <>
@@ -5,4 +9,5 @@ export default function Home() {
     <title>Gilberto Dev Front-end</title>
     </>
   )
+
 }

@@ -25,7 +25,7 @@ export const Container = styled.div`
 	width: 75%;
 	margin: 2em auto;
 	/* background-color: #2c2c2c; */
-	background: rgba(35, 35, 35, 0.4);
+	background: var(--background-containers);
 	padding: 2rem;
 	border-radius: 9px;
 	transition: 0.5s;

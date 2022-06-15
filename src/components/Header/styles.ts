@@ -72,7 +72,7 @@ export const Container = styled.div`
 	transition: 0.4s;
 	position: absolute;
 	-webkit-transition: 0.4s;
-	background-color: orange;
+	background-color: var(--background-day);
     
     &:before {
         left: 4px;
@@ -92,7 +92,7 @@ export const Container = styled.div`
 
 
 input:checked + .slider {
-	background: var(--blue-light);
+	background: var(--background);
 	
 }
 
